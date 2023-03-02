@@ -1,0 +1,24 @@
+## 数据库dev分支
+
+## mysql数据库
+[mysql]
+## mysql数据库地址
+ip = "192.168.13.150"
+## 数据库端口
+port = 3306
+## 数据库账号
+username = "root"
+## 数据库密码
+password = "yannuo"
+## 数据库库名
+db_name = "esv"
+
+[redis]
+## redis地址
+ip = "192.168.13.150"
+## 端口
+port = 6379
+## token超时时间
+token_timeout = 86400
+## 普通超时时间
+timeout = 86400

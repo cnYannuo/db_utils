@@ -1,0 +1,20 @@
+[package]
+name = "system_db"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mysql = "23.0.1"
+lazy_static = "1.4.0"
+redis = "0.22.3"
+
+system_config = { path = "../system_config"}
+macro_builder = {path = "../macro_builder"}
+
+serde = "1.0.152"
+serde_derive = "1.0.152"
+
+log = "0.4.17"
+env_logger = "0.10.0"

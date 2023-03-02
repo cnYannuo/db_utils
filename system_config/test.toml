@@ -1,0 +1,7 @@
+[timer]
+timer_list = [
+    "{\"id\":1,\"account\":\"1\",\"password\":\"2\",\"permission_lv\":1,\"create_time\":1}"
+]
+
+
+

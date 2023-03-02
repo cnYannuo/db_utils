@@ -1,0 +1,6 @@
+[profiles]
+db = "test"
+
+static_resource = "./"
+
+limit = 100

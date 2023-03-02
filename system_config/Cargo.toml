@@ -1,0 +1,22 @@
+[package]
+name = "system_config"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+## 这里千万别乱加  会跟rocket冲突  rocker用了tokio中的net和io
+tokio = { version = "1.25.0", features = ["time", "sync", "rt", "macros"] }
+
+csv = "1.2.0"
+
+toml = "0.7.2"
+serde = "1.0.152"
+serde_derive = "1.0.152"
+serde_json = "1.0.93"
+
+lazy_static = "1.4.0" 
+
+chrono = "0.4.23"
+chrono-tz = "0.8.1"

@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "system_config",
+    "macro_builder",
+    "system_db",
+]
