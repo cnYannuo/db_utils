@@ -3,6 +3,7 @@ use std::collections::HashMap;
 use dao::db_tool;
 
 pub mod dao;
+mod test;
 
 pub trait CommonDbImpl {
 
