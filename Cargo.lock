@@ -971,7 +971,7 @@ dependencies = [
 
 [[package]]
 name = "macro_builder"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "quote",
  "syn",
@@ -1665,7 +1665,7 @@ dependencies = [
 
 [[package]]
 name = "system_config"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "chrono",
  "chrono-tz",
@@ -1680,7 +1680,7 @@ dependencies = [
 
 [[package]]
 name = "system_db"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "env_logger",
  "lazy_static",
