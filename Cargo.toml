@@ -5,12 +5,11 @@ authors = ["yn <642410979@qq.com>"]
 edition = "2021"
 description = "有关mysql的集成简化工具"
 license = "GPL-3.0"
+repository = "https://github.com/cnYannuo/db_utils"
 readme = "README.md"
 
 [lib]
-name = "db_utils_lib"
 path = "db_tool/lib.rs"
-crate-type = ["staticlib", "cdylib"]
 
 [workspace]
 members = [
@@ -19,12 +18,14 @@ members = [
     "system_db",
 ]
 
-[dependencies]
-macro_builder = { workspace = true }
-system_config = { workspace = true}
-system_db = { workspace = true}
+[dependencies.macro_builder]
+path = "./macro_builder"
+version = "0.1.1"
 
-[workspace.dependencies]
-macro_builder = { path = "./macro_builder" }
-system_config = { path = "./system_config" }
-system_db = { path = "./system_db" }
+[dependencies.system_config]
+path = "./system_config"
+version = "0.1.1"
+
+[dependencies.system_db]
+path = "./system_db"
+version = "0.1.1"
