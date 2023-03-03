@@ -7,9 +7,15 @@ description = "有关mysql的集成简化工具"
 license = "GPL-3.0"
 readme = "README.md"
 
-[[bin]]
-name = "db_tool"
-path = "db_tool/main.rs"
+[lib]
+name = "db_utils_lib"
+path = "db_tool/lib.rs"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+macro_builder = { path = "macro_builder"}
+system_config = { path = "system_config"}
+system_db = { path = "system_db"}
 
 [workspace]
 members = [
