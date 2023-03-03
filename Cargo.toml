@@ -12,14 +12,19 @@ name = "db_utils_lib"
 path = "db_tool/lib.rs"
 crate-type = ["staticlib", "cdylib"]
 
-[dependencies]
-macro_builder = { path = "macro_builder", version = "0.1.1"}
-system_config = { path = "system_config", version = "0.1.1"}
-system_db = { path = "system_db", version = "0.1.1"}
-
 [workspace]
 members = [
     "system_config",
     "macro_builder",
     "system_db",
 ]
+
+[dependencies]
+macro_builder = { workspace = true }
+system_config = { workspace = true}
+system_db = { workspace = true}
+
+[workspace.dependencies]
+macro_builder = { path = "./macro_builder" }
+system_config = { path = "./system_config" }
+system_db = { path = "./system_db" }
