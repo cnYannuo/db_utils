@@ -33,7 +33,7 @@
         }
     }
 
-    impl DbImpl for Payment {
+    impl DbImpl for User {
 
     }
 
