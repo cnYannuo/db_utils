@@ -62,8 +62,8 @@ fn impl_db_macro(ast: &syn::DeriveInput) -> TokenStream {
                     
                     // use mysql::{Params, Value};
                     use mysql::prelude::FromRow;
-                    use crate::CommonDbImpl;
-                    use crate::dao::db_tool;
+                    use db_utils::db_utils_dao::CommonDbImpl;
+                    use db_utils::db_utils_dao::dao::db_tool;
                     use std::collections::HashMap;
 
                     impl FromRow for #name {

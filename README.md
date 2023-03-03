@@ -26,12 +26,24 @@
         }
     }
 
+    pub trait DbImpl {
+        fn get(table_name: &str) -> usize {
+            let mut conn = db_tool::get_db_conn();
+            conn.query_first(format!("select count(*) from {}", table_name)).unwrap().unwrap()
+        }
+    }
+
+    impl DbImpl for Payment {
+
+    }
 
     #[test]
     fn test() {
         // 获取表数据的数量
         let number = User::get_count("table");
         println!("number: {}", number);
+        let number2 = User::get("table");
+        println!("number2: {}", number2);
         // 获取表数据
         let user_list = User::batch_select("table", 1, 100);
         for item in user_list {

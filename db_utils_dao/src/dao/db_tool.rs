@@ -1,6 +1,6 @@
 use std::{time::{SystemTime, UNIX_EPOCH}, collections::HashMap};
 
-use system_config::db_config::Db;
+use db_utils_config::db_config::Db;
 use log::error;
 use mysql::{PooledConn, Opts, Pool, prelude::FromRow};
 use lazy_static::lazy_static;

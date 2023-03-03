@@ -1,6 +1,6 @@
 [package]
 name = "db_utils"
-version = "0.1.1"
+version = "0.1.3"
 authors = ["yn <642410979@qq.com>"]
 edition = "2021"
 description = "有关mysql的集成简化工具"
@@ -13,19 +13,19 @@ path = "db_tool/lib.rs"
 
 [workspace]
 members = [
-    "system_config",
+    "db_utils_config",
     "macro_builder",
-    "system_db",
+    "db_utils_dao",
 ]
 
 [dependencies.macro_builder]
 path = "./macro_builder"
+version = "0.1.3"
+
+[dependencies.db_utils_config]
+path = "./db_utils_config"
 version = "0.1.1"
 
-[dependencies.system_config]
-path = "./system_config"
-version = "0.1.1"
-
-[dependencies.system_db]
-path = "./system_db"
+[dependencies.db_utils_dao]
+path = "./db_utils_dao"
 version = "0.1.1"

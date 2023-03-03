@@ -1,9 +1,10 @@
 [package]
-name = "system_config"
+name = "db_utils_config"
 version = "0.1.1"
 edition = "2021"
 authors = ["yn <642410979@qq.com>"]
 license = "GPL-3.0"
+description = "db_utils所需的db_utils_config"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

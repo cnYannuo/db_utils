@@ -1,9 +1,10 @@
 [package]
-name = "system_db"
+name = "db_utils_dao"
 version = "0.1.1"
 edition = "2021"
 authors = ["yn <642410979@qq.com>"]
 license = "GPL-3.0"
+description = "db_utils所需的db_utils_dao"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -12,7 +13,7 @@ mysql = "23.0.1"
 lazy_static = "1.4.0"
 redis = "0.22.3"
 
-system_config = { path = "../system_config", version = "0.1.1"}
+db_utils_config = { path = "../db_utils_config", version = "0.1.1"}
 macro_builder = {path = "../macro_builder", version = "0.1.1"}
 
 serde = "1.0.152"

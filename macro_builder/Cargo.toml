@@ -1,9 +1,10 @@
 [package]
 name = "macro_builder"
-version = "0.1.1"
+version = "0.1.3"
 edition = "2021"
 authors = ["yn <642410979@qq.com>"]
 license = "GPL-3.0"
+description = "db_utils所需的macro项目"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
