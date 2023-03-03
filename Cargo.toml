@@ -11,6 +11,13 @@ readme = "README.md"
 [lib]
 path = "db_tool/lib.rs"
 
+[workspace]
+members = [
+    "system_config",
+    "macro_builder",
+    "system_db",
+]
+
 [dependencies.macro_builder]
 path = "./macro_builder"
 version = "0.1.1"

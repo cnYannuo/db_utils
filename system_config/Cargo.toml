@@ -2,6 +2,8 @@
 name = "system_config"
 version = "0.1.1"
 edition = "2021"
+authors = ["yn <642410979@qq.com>"]
+license = "GPL-3.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
